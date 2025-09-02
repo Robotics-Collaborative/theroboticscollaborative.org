@@ -21,7 +21,8 @@ class Footer < Bridgetown::Component
       {name: "FIRST Robotics", href: "/first_robotics"},
       {name: "Events", href: "https://lu.ma/wayo5yb9"},
       {name: "Contact", href: "/contact"},
-      {name: "Rose City Robotics", href: "https://rosecityrobotics.com"}
+      {name: "Rose City Robotics", href: "https://rosecityrobotics.com"},
+      {name: "Source Code", href: "https://github.com/Robotics-Collaborative/theroboticscollaborative.org"}
     ]
   end
 end
