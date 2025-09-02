@@ -39,7 +39,7 @@
     %>" />
     <meta property="og:description" content="<%= resource.data.description || site.metadata.description %>" />
     <meta property="og:type" content="<%= resource.data.social&.dig('og_type') || 'website' %>" />
-    <meta property="og:url" content="<%= absolute_url resource.relative_url %>" />
+    <meta property="og:url" content="https://theroboticscollaborative.org<%= resource.relative_url %>" />
     <meta property="og:site_name" content="Rose City Robotics Collaborative" />
     <meta property="og:locale" content="<%= resource.data.social&.dig('og_locale') || 'en_US' %>" />
 
@@ -71,7 +71,7 @@
     <% if resource.data.canonical_url %>
       <link rel="canonical" href="<%= absolute_url resource.data.canonical_url %>" />
     <% end %>
-    <%= seo %>
+
   </head>
   <body class="flex h-full bg-zinc-50 dark:bg-black">
     <div class="flex w-full">
