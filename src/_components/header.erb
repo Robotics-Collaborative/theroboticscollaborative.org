@@ -24,7 +24,7 @@
 
           <!-- Desktop Navigation -->
           <nav class="pointer-events-auto hidden md:block">
-            <ul class="flex flex-wrap rounded-full bg-white/90 px-2 text-sm font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+            <ul class="flex flex-nowrap rounded-full bg-white/90 px-6 text-xs font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
               <% navigation_items.each do |item| %>
                 <li>
                   <a href="<%= item[:href] %>" class="relative block px-2 py-2 transition hover:text-teal-500 dark:hover:text-teal-400 whitespace-nowrap"><%= item[:name] %></a>
