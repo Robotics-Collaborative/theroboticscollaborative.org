@@ -43,7 +43,7 @@
     <meta property="og:site_name" content="Rose City Robotics Collaborative" />
     <meta property="og:locale" content="<%= resource.data.social&.dig('og_locale') || 'en_US' %>" />
 
-    <% featured_image = resource.data.image ? "#{relative_url("/images/#{resource.data.image}")}?v=#{Time.now.to_i}" : "#{relative_url('/images/square_500.jpg')}?v=#{Time.now.to_i}" %>
+    <% featured_image = resource.data.image ? "#{relative_url("/images/#{resource.data.image}")}?v=#{Time.now.to_i}" : "#{relative_url('/images/rc_og_image.jpg')}?v=#{Time.now.to_i}" %>
     <meta property="og:image" content="https://theroboticscollaborative.org<%= featured_image %>" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
