@@ -4,10 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-# Reference personal info data to avoid duplication
-# The actual values are defined in personal_info.yml
-title: "Portfolio"
-tagline: "<%= site.data.personal_info.tagline %>"
-email: "<%= site.data.personal_info.email %>"
-description: >-
-  <%= site.data.personal_info.bio %>
+title: "Robotics Collaborative"
+tagline: "Creating Community, Making Learning Fun."
+email: "robotics.collaborative@rosecityrobotics.com"
+description: "The Robotics Collaborative is an Oregon non-profit organization helping to develop community around the next generation of robotics. We are a group of professionals passionate about robotics and community."
