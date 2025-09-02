@@ -1,166 +1,450 @@
 ---
 layout: default
-title: FIRST Robotics
-description: Supporting FIRST Robotics teams and fostering innovation in robotics education
+title: FIRST Robotics - FTC Team #30603
+description: FTC Team #30603 - Supporting middle school robotics education in Portland, Oregon
 ---
 
-<%= render Container.new(outer_class: "mt-16 sm:mt-32") do %>
-  <header class="max-w-2xl">
-    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-      FIRST Robotics
-    </h1>
-    <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-      Supporting FIRST Robotics teams and fostering innovation in robotics education through mentorship, resources, and community collaboration.
-    </p>
-  </header>
-<% end %>
 
-<%= render Container.new(outer_class: "mt-16 sm:mt-20") do %>
-  <div class="space-y-20">
 
-    <!-- About FIRST Section -->
-    <section>
-      <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true" class="h-6 w-6 flex-none">
-          <path d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span class="ml-3">About FIRST</span>
-      </h2>
-      <div class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-        <p>
-          FIRST (For Inspiration and Recognition of Science and Technology) is a global robotics community that prepares young people for the future through a suite of inclusive, team-based robotics programs.
-        </p>
-        <p>
-          The Robotics Collaborative is committed to supporting FIRST teams through mentorship, technical resources, and fostering connections within the robotics community.
-        </p>
-      </div>
-    </section>
-
-    <!-- Programs Section -->
-    <section>
-      <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true" class="h-6 w-6 flex-none">
-          <path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span class="ml-3">FIRST Programs</span>
-      </h2>
-      <div class="mt-6">
-        <div class="grid gap-8 md:grid-cols-2">
-          <div class="group relative rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-            <h3 class="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              FIRST Robotics Competition (FRC)
-            </h3>
-            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-              High school teams design, build, and program robots to compete in an annual game-based challenge.
-            </p>
+<div class="bg-white dark:bg-gray-900">
+  <main>
+    <!-- Header section -->
+    <div class="relative isolate overflow-hidden bg-gray-900 sm:px-6 pt-14 lg:px-8">
+      <div class="absolute inset-0 -z-10 bg-[#081510] opacity-[.90]"></div>
+      <div class="absolute inset-0 -z-10 bg-gradient-to-tr from-[#58d083] to-[#69acf1] mix-blend-multiply opacity-50"></div>
+      <svg viewBox="0 0 1097 845" aria-hidden="true" class="hidden transform-gpu blur-3xl sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:w-[68.5625rem]">
+        <path fill="url(#10724532-9d81-43d2-bb94-866e98dd6e42)" fill-opacity=".2" d="M301.174 646.641 193.541 844.786 0 546.172l301.174 100.469 193.845-356.855c1.241 164.891 42.802 431.935 199.124 180.978 195.402-313.696 143.295-588.18 284.729-419.266 113.148 135.13 124.068 367.989 115.378 467.527L811.753 372.553l20.102 451.119-530.681-177.031Z" />
+        <defs>
+          <linearGradient id="10724532-9d81-43d2-bb94-866e98dd6e42" x1="1097.04" x2="-141.165" y1=".22" y2="363.075" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#776FFF" />
+            <stop offset="1" stop-color="#FF4694" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg viewBox="0 0 1097 845" aria-hidden="true" class="absolute -top-52 left-1/2 -z-10 w-[68.5625rem] -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0">
+        <path fill="url(#8ddc7edb-8983-4cd7-bccb-79ad21097d70)" fill-opacity=".2" d="M301.174 646.641 193.541 844.786 0 546.172l301.174 100.469 193.845-356.855c1.241 164.891 42.802 431.935 199.124 180.978 195.402-313.696 143.295-588.18 284.729-419.266 113.148 135.13 124.068 367.989 115.378 467.527L811.753 372.553l20.102 451.119-530.681-177.031Z" />
+        <defs>
+          <linearGradient id="8ddc7edb-8983-4cd7-bccb-79ad21097d70" x1="1097.04" x2="-141.165" y1=".22" y2="363.075" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#776FFF" />
+            <stop offset="1" stop-color="#FF4694" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="mx-auto max-w-7xl py-16 sm:py-24">
+        <div class="mx-auto max-w-4xl text-center">
+          <!-- Main heading with improved spacing -->
+          <div class="mb-8">
+            <h1 class="text-5xl font-bold tracking-tight text-white sm:text-7xl mb-4">
+              FTC Team #30603
+            </h1>
+            <p class="text-lg text-gray-300 mb-4">Coach: Duncan Miller</p>
+            <div class="h-1 w-32 bg-gradient-to-r from-[#58d083] to-[#69acf1] mx-auto rounded-full"></div>
           </div>
 
-          <div class="group relative rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-            <h3 class="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              FIRST Tech Challenge (FTC)
-            </h3>
-            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-              Student teams design, build, program, and operate robots to compete in head-to-head challenges.
-            </p>
-          </div>
+          <!-- Team info cards -->
+          <div class="grid gap-6 sm:gap-8 mt-12">
+            <!-- FTC Team Info -->
+            <a href="/contact" class="block">
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 cursor-pointer">
+                <!-- FTC Logo centered at top -->
+                <div class="flex justify-center mb-6">
+                  <div class="bg-white rounded-lg p-3 shadow-lg">
+                    <img src="<%= relative_url '/images/FIRSTTech_IconVert_RGB.png' %>" alt="FIRST Tech Challenge Logo" class="h-16 sm:h-20 w-auto object-contain" />
+                  </div>
+                </div>
 
-          <div class="group relative rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-            <h3 class="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              FIRST LEGO League (FLL)
-            </h3>
-            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-              Elementary and middle school students research real-world problems and build LEGO-based robots.
-            </p>
-          </div>
+                <!-- Centered content below -->
+                <div class="text-center">
+                  <div class="flex items-center justify-center gap-3 mb-2">
+                    <h2 class="text-2xl font-semibold text-white">2025-2026 Season</h2>
+                  </div>
+                  <p class="text-xl text-white font-medium">Team Registration Open - Season Kickoff September 6th, 2025</p>
+                  <p class="text-gray-300 mt-2">Portland State University Science and Education Center - Sundays 9am-1pm</p>
+                </div>
+              </div>
+            </a>
 
-          <div class="group relative rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-            <h3 class="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              FIRST LEGO League Jr. (FLL Jr.)
-            </h3>
-            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-              Ages 6-10 explore science and technology concepts through LEGO building and programming.
-            </p>
+            <!-- School Info -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div class="flex items-center justify-center gap-3 mb-2">
+                <svg class="w-6 h-6 text-[#69acf1]" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+                <h2 class="text-2xl font-semibold text-white">7th and 8th Grade Students from</h2>
+              </div>
+              <h3 class="text-lg text-gray-300">Bridger Creative Science School</h3>
+              <h3 class="text-lg text-gray-300">Harrison Park Middle School</h3>
+              <p class="text-gray-300">Portland, Oregon</p>
+            </div>
+
+            <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" class="block">
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 cursor-pointer">
+                <img src="<%= relative_url '/images/FIRST_AGE-FTC-decode_logo.webp' %>" alt="FIRST Tech Challenge" class="w-3/4 sm:w-2/3 lg:w-1/2 h-auto mx-auto" />
+              </div>
+            </a>
+
+            <!-- Sponsor Info -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+
+              <!-- Presenting Sponsors -->
+              <div class="mb-12 border-2 border-yellow-400/50 rounded-3xl p-4 sm:p-8 bg-gradient-to-br from-yellow-400/10 to-yellow-600/10 backdrop-blur-sm">
+                <div class="text-center mb-6 sm:mb-8">
+                  <div class="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                    <svg class="w-6 h-6 sm:w-8 sm:h-8 text-yellow-400" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                    <h2 class="text-xl sm:text-2xl font-bold text-yellow-400 uppercase tracking-wide">Gold Sponsors</h2>
+                    <svg class="w-6 h-6 sm:w-8 sm:h-8 text-yellow-400" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                  </div>
+                  <p class="text-base sm:text-lg text-yellow-200 font-medium px-4">Powering Innovation in Robotics Education</p>
+                </div>
+
+                <!-- Premium Logo Treatment -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-6">
+                  <!-- Google Logo -->
+                  <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-2xl hover:shadow-3xl transition-all duration-300 border border-white/20 w-full max-w-xs sm:w-48 h-24 sm:h-32 flex flex-col justify-center">
+                    <div class="text-center">
+                      <p class="text-xs text-gray-600 font-medium">Technology Partner</p>
+                    </div>
+                  </div>
+
+                  <!-- Partnership Symbol -->
+                  <div class="text-2xl sm:text-3xl font-bold text-yellow-400 animate-pulse rotate-90 sm:rotate-0">×</div>
+
+                  <!-- Rose City Robotics Logo -->
+                  <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-2xl hover:shadow-3xl transition-all duration-300 border border-white/20 w-full max-w-xs sm:w-48 h-24 sm:h-32 flex flex-col justify-center">
+                    <div class="text-center">
+                      <img src="<%= relative_url '/images/RoseCityRobotics-Logo-Primary-RGB-Red.png' %>" alt="Rose City Robotics" class="h-8 sm:h-12 w-auto mx-auto mb-1 sm:mb-2" />
+                      <p class="text-xs text-gray-600 font-medium">Education Partner</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Partnership Highlight -->
+                <div class="bg-yellow-400/20 border border-yellow-400/30 rounded-xl p-4 text-center">
+                  <p class="text-white font-medium">
+                    <span class="text-yellow-400 font-bold">Presenting Sponsor Partnership</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Silver Tier -->
+              <div class="mb-6">
+                <div class="flex items-center justify-center gap-2 mb-4">
+                  <svg class="w-5 h-5 text-gray-400" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                  </svg>
+                  <h3 class="text-lg font-bold text-gray-300 uppercase tracking-wide">Silver Sponsors</h3>
+                  <svg class="w-5 h-5 text-gray-400" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                  </svg>
+                </div>
+                <div class="space-y-4 text-center">
+                  <div class="flex justify-center">
+                    <img src="<%= relative_url '/images/psu-sba.jpeg' %>" alt="Portland State University Small Business Accelerator" class="h-20 w-auto rounded-lg" />
+                  </div>
+                  <p class="text-lg font-semibold text-gray-200">Portland State University SBA</p>
+                </div>
+              </div>
+
+              <!-- Bronze Tier -->
+              <div class="mb-6">
+                <div class="flex items-center justify-center gap-2 mb-4">
+                  <svg class="w-4 h-4 text-amber-600" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                  </svg>
+                  <h3 class="text-base font-bold text-amber-600 uppercase tracking-wide">Bronze Sponsors</h3>
+                  <svg class="w-4 h-4 text-amber-600" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                  </svg>
+                </div>
+                <div class="space-y-2 text-center">
+                  <p class="text-gray-400 italic">Sponsorship opportunities available</p>
+                </div>
+              </div>
+
+              <!-- Partners -->
+              <div class="mb-6">
+                <div class="flex items-center justify-center gap-2 mb-4">
+                  <svg class="w-3 h-3 text-blue-400" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                  </svg>
+                  <h3 class="text-sm font-bold text-blue-400 uppercase tracking-wide">Partners and Supporters</h3>
+                  <svg class="w-3 h-3 text-blue-400" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                  </svg>
+                </div>
+                <div class="space-y-2 text-center">
+                  <p class="text-base font-medium text-gray-300">Oregon Robotics Tournament and Outreach Program (ORTOP)</p>
+                  <p class="text-base font-medium text-gray-300">Metro Region Innovation Hub</p>
+                </div>
+              </div>
+
+              <!-- Call to Action -->
+              <div class="mt-8 pt-6 border-t border-white/20">
+                <div class="text-center">
+                  <p class="text-sm text-gray-300 mb-2">Interested in sponsoring our team?</p>
+                  <a href="/contact" class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Donation Section -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+              <div class="flex items-center justify-center gap-3 mb-6">
+                <svg class="w-6 h-6 text-[#58d083]" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                </svg>
+                <h2 class="text-2xl font-semibold text-white">Support Our Team</h2>
+              </div>
+
+              <div class="text-center mb-8">
+                <p class="text-lg text-gray-300 mb-6">
+                  Help us inspire the next generation of engineers and innovators. Your donation directly supports our students' robotics education and competition experiences.
+                </p>
+
+                <!-- Equipment Needs Table -->
+                <div class="bg-white/5 rounded-xl p-6 mb-8">
+                  <h3 class="text-xl font-semibold text-white mb-4">What Your Donation Supports</h3>
+                  <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm">
+                      <thead>
+                        <tr class="border-b border-white/20">
+                          <th class="text-white font-semibold pb-3 pr-4">Equipment</th>
+                          <th class="text-white font-semibold pb-3 text-right">Cost</th>
+                        </tr>
+                      </thead>
+                      <tbody class="space-y-2">
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200 flex items-center gap-2">
+                              Control and Power Bundle (x2)
+                              <svg class="w-4 h-4 text-[#58d083]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                              </svg>
+                            </div>
+                            <div class="text-xs text-[#58d083]">✅ Funded by Major Technology Sponsor! Core robot electronics and power systems</div>
+                          </td>
+                          <td class="py-3 text-right font-medium" style="color: #58d083;">$1,440</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200 flex items-center gap-2">
+                              Robot Starter Kit (x2)
+                              <svg class="w-4 h-4 text-[#58d083]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                              </svg>
+                            </div>
+                            <div class="text-xs text-[#58d083]">✅ Funded by Major Technology Sponsor! Motors, sensors, structural components</div>
+                          </td>
+                          <td class="py-3 text-right font-medium" style="color: #58d083;">$1,274</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200 flex items-center gap-2">
+                              FIRST Robotics Fees
+                              <svg class="w-4 h-4 text-[#58d083]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                              </svg>
+                            </div>
+                            <div class="text-xs text-[#58d083]">✅ Funded by Major Technology Sponsor! Official team registration with FIRST Robotics, ORTOP and Hillsboro Qualifying Tournament</div>
+                          </td>
+                          <td class="py-3 text-right font-medium" style="color: #58d083;">$625</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200 flex items-center gap-2">
+                              Practice Field
+                              <svg class="w-4 h-4 text-[#58d083]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                              </svg>
+                            </div>
+                            <div class="text-xs text-[#58d083]">✅ Funded by Rose City Robotics! Tiles, corners, centers, challenge tools</div>
+                          </td>
+                          <td class="py-3 text-right font-medium" style="color: #58d083;">$1,450</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200">Tools & Equipment</div>
+                            <div class="text-xs text-gray-400">Wrenches, screwdrivers, safety equipment</div>
+                          </td>
+                          <td class="py-3 text-right text-gray-200 font-medium">$500</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200">T-shirts, Banners, Recruitment Posters</div>
+                            <div class="text-xs text-gray-400">Team merchandise and promotional materials</div>
+                          </td>
+                          <td class="py-3 text-right text-gray-200 font-medium">$400</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200">Parts and Supplies</div>
+                            <div class="text-xs text-gray-400">3D printing and screen printing supplies (PSU supplied equipment), extra parts</div>
+                          </td>
+                          <td class="py-3 text-right text-gray-200 font-medium">$350</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200 flex items-center gap-2">
+                              Monthly TriMet Passes
+                              <svg class="w-4 h-4 text-[#58d083]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                              </svg>
+                            </div>
+                            <div class="text-xs text-[#58d083]">✅ Funded by Major Technology Sponsor! Need-based transportation support for up to 10 team members</div>
+                          </td>
+                          <td class="py-3 text-right font-medium" style="color: #58d083;">$1,680</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200">FIRST Tech Challenge DECODE Full Game Set</div>
+                            <div class="text-xs text-gray-400">Complete game elements for 2024-2025 season practice</div>
+                          </td>
+                          <td class="py-3 text-right text-gray-200 font-medium">$485</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200">Tournament Transportation</div>
+                            <div class="text-xs text-gray-400">Bus for Hillsboro competition</div>
+                          </td>
+                          <td class="py-3 text-right text-gray-200 font-medium">$2,300</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200">General Fund for Financial Aid</div>
+                            <div class="text-xs text-gray-400">Supporting up to 5 team members who need assistance with costs</div>
+                            <div class="text-xs mt-1" style="color: #58d083;">✅ Funded by Team Fees!</div>
+                          </td>
+                          <td class="py-3 text-right font-medium" style="color: #58d083;">$2,360</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                          <td class="py-3 pr-4">
+                            <div class="font-medium text-gray-200 flex items-center gap-2">
+                              Workspace
+                              <svg class="w-4 h-4 text-[#58d083]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                              </svg>
+                            </div>
+                            <div class="text-xs text-[#58d083]">✅ Donated! 6 months of dedicated field and work space from PSU SBA</div>
+                          </td>
+                          <td class="py-3 text-right font-medium" style="color: #58d083;">$3,600</td>
+                        </tr>
+                        <tr><td colspan="2" class="py-4"></td></tr>
+                        <tr class="border-t-2 border-yellow-400/30 bg-white/5">
+                          <td class="py-4 pr-4">
+                            <div class="font-medium text-lg" style="color: #58d083;">Total Donations & Funding</div>
+                          </td>
+                          <td class="py-4 text-right font-medium text-lg" style="color: #58d083;">$12,429</td>
+                        </tr>
+                        <tr class="border-t-2 border-white/30 pt-3">
+                          <td class="py-3 pr-4">
+                            <div class="font-bold text-white text-base">Remaining Team Needs</div>
+                          </td>
+                          <td class="py-3 text-right text-white font-bold text-base">$4,035</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="text-xs text-gray-400 mt-4 text-center">
+                    Every dollar helps us provide hands-on STEM education and competitive robotics experience
+                  </p>
+                </div>
+              </div>
+
+              <!-- Stripe Buy Button -->
+              <div class="flex justify-center">
+                <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                  <stripe-buy-button
+                    buy-button-id="buy_btn_1RwRHkKFrVCf30eDLbZrkho7"
+                    publishable-key="pk_live_51M8cQgKFrVCf30eD1Z1duLlM0PYfp7vMileXo2TVsZTA92U9A1QoQG0OfTerh5mOqo33nX20BIledZNoO13mfmMK00zf04dLQA">
+                  </stripe-buy-button>
+                </div>
+              </div>
+
+              <div class="mt-6 text-center">
+                <p class="text-sm text-gray-400">
+                  🤖 Every donation helps us build better robots and brighter futures
+                </p>
+                <p class="text-xs text-gray-500 mt-2">
+                  Secure donation processing powered by Stripe
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+              <div class="flex items-center justify-center gap-3 mb-6">
+                <h2 class="text-2xl font-semibold text-white">Frequently Asked Questions</h2>
+              </div>
+
+              <div class="space-y-6 text-left">
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">What is FIRST Robotics and the FIRST Tech Challenge (FTC)?</h3>
+                  <p class="text-gray-300">FIRST is a global organization that inspires young people to become science and technology leaders through hands-on robotics programs. FTC is a robotics competition for students in grades 7–12; team #30603 is a middle school team for grades 7–8. <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" class="text-teal-400 hover:text-teal-300">Learn more about FTC</a></p>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">How often will there be practices, and where will they be?</h3>
+                  <p class="text-gray-300">We will meet to build and work on our robot every Sunday from 9 a.m. to 1 p.m. at <a href="/contact" target="_blank" class="text-teal-400 hover:text-teal-300">Portland State University Science and Education Center</a>. Practices are not mandatory, but we encourage everyone to attend to learn more about robotics and build their skills. We are finalizing our permanent location and will provide updates soon.</p>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">Do I have to be good at robotics or have experience coding?</h3>
+                  <p class="text-gray-300">Absolutely no experience is necessary—everyone is encouraged to join. There are many roles on a team and a variety of skills you can learn, including outreach, quality testing, coding (blocks), fabrication, and documentation.</p>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">Will we be traveling to matches or competitions?</h3>
+                  <p class="text-gray-300">While we have the option to compete in leagues around Portland, for this season we plan to attend only one qualifying tournament in Hillsboro, OR, in January or February 2026. All other meetings will take place at PSU Science and Education Center. Winning the tournament would qualify us for the state tournament, though it's unlikely for a rookie team to advance.</p>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">How much does it cost?</h3>
+                  <p class="text-gray-300">Team fees are $125 per month for the six month season between September and February, with the first month paid upon registration. Team fees support coaching stipends for two trained FTC Coaches per team. The costs to deliver the program far exceed these fees, and the team will be fundraising from local businesses and organizations to cover expenses including meeting space, equipment, materials, tournament fees, and transportation.</p>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">Do you offer financial assistance?</h3>
+                  <p class="text-gray-300">Yes, we offer flexible, need-based financial aid options. Out of 15 total team spots we have funding for 5 need-based scholarships on a sliding scale. If you'd like to sponsor an extra need-based seat please donate below and note "Need-based Scholarship" in the donation notes.</p>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">What is included in the monthly team fees?</h3>
+                  <p class="text-gray-300">Fees cover all coaching stipends and financial aid for need-based scholarships. Each coach will be provided a small stipend as well as a tool and education allowance, with two verified and background-checked FIRST coaches per team. These fees go directly to coaches, and no fees are drawn from team fundraising.</p>
+                </div>
+
+                <div>
+                   <h3 class="text-lg font-semibold text-white mb-2">What if there are other team expenses?</h3>
+                   <p class="text-gray-300">Part of being on an FTC team in the FIRST community is fundraising to cover all expenses. This is part of the team experience and teaches marketing, outreach, accounting, and other skills. The more we fundraise, the more we can customize our robot and open the door to underrepresented students.</p>
+                 </div>
+
+                 <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">What do the robots look like?</h3>
+                  <p class="text-gray-300">Our team uses the <a href="https://www.gobilda.com/ftc-starter-kit-2025-2026-season/" target="_blank" class="text-teal-400 hover:text-teal-300">GoBilda FTC kit</a> as the foundation for our robot. These kits are built from high-quality aluminum parts, motors, sensors, and wheels, and can be customized with additional components for each season's challenge. Our team's success in fundraising will determine just how much we can customize our robot.</p>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">What are the competitions like?</h3>
+                  <p class="text-gray-300">FTC competitions are high-energy, fast-paced events where teams compete in a themed challenge that changes each year. Matches are played on a 12-by-12-foot field, with alliances of two teams working together to score points by completing tasks such as moving game elements, climbing structures, or activating mechanisms. Events also include team interviews with judges, where awards are given for engineering, design, outreach, and teamwork.</p>
+                </div>
+
+                 <div>
+                   <h3 class="text-lg font-semibold text-white mb-2">Who can I contact for more information or registration?</h3>
+                   <p class="text-gray-300">You can contact Coach Duncan Miller at duncan@rosecityrobotics.com or through our <a href="/contact" class="text-teal-400 hover:text-teal-300">contact page</a>.</p>
+                 </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- How We Support Section -->
-    <section>
-      <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true" class="h-6 w-6 flex-none">
-          <path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span class="ml-3">How We Support Teams</span>
-      </h2>
-      <div class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-        <p>
-          The Robotics Collaborative provides comprehensive support to FIRST teams through various initiatives:
-        </p>
-        <ul class="list-disc list-inside space-y-2 ml-4">
-          <li>Technical mentorship from industry professionals</li>
-          <li>Workshops on robot design, programming, and project management</li>
-          <li>Access to tools, equipment, and fabrication resources</li>
-          <li>Networking opportunities with other teams and mentors</li>
-          <li>Scholarship and funding opportunities</li>
-          <li>Career guidance and STEM education pathways</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Get Involved Section -->
-    <section>
-      <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true" class="h-6 w-6 flex-none">
-          <path d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span class="ml-3">Get Involved</span>
-      </h2>
-      <div class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-        <p>
-          Whether you're a student, educator, parent, or industry professional, there are many ways to get involved with FIRST and The Robotics Collaborative:
-        </p>
-        <div class="grid gap-6 md:grid-cols-2">
-          <div>
-            <h3 class="text-base font-semibold text-zinc-800 dark:text-zinc-100 mb-2">For Teams</h3>
-            <ul class="list-disc list-inside space-y-1 text-sm">
-              <li>Register for mentorship programs</li>
-              <li>Attend our workshops and training sessions</li>
-              <li>Join our community forums and discussions</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-base font-semibold text-zinc-800 dark:text-zinc-100 mb-2">For Volunteers</h3>
-            <ul class="list-disc list-inside space-y-1 text-sm">
-              <li>Become a team mentor or coach</li>
-              <li>Volunteer at competitions and events</li>
-              <li>Share your expertise through workshops</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact CTA -->
-    <section class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true" class="h-6 w-6 flex-none">
-          <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span class="ml-3">Ready to Get Started?</span>
-      </h2>
-      <p class="mt-2 text-base text-zinc-600 dark:text-zinc-400">
-        Contact us to learn more about how The Robotics Collaborative can support your FIRST team or to get involved as a volunteer.
-      </p>
-      <div class="mt-6">
-        <a href="/contact" class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70">
-          Contact Us
-          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="h-4 w-4 stroke-zinc-100">
-            <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </a>
-      </div>
-    </section>
-
-  </div>
-<% end %>
+    </div>
+  </main>
+</div>
