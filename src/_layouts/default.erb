@@ -38,11 +38,38 @@
       end
     %>" />
     <meta property="og:description" content="<%= resource.data.description || site.metadata.description %>" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="<%= resource.data.social&.dig('og_type') || 'website' %>" />
     <meta property="og:url" content="<%= absolute_url resource.relative_url %>" />
-
-    <% if resource.data.image %>
-      <meta property="og:image" content="<%= absolute_url resource.data.image %>" />
+    <meta property="og:site_name" content="Rose City Robotics Collaborative" />
+    <meta property="og:locale" content="<%= resource.data.social&.dig('og_locale') || 'en_US' %>" />
+    
+    <% featured_image = resource.data.image || '/images/square_500.jpg' %>
+    <meta property="og:image" content="<%= absolute_url featured_image %>" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="<%= resource.data.title || site.metadata.title %>" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="<%= resource.data.social&.dig('twitter_card') || 'summary_large_image' %>" />
+    <meta name="twitter:title" content="<%=
+      if resource.data.title&.include?("site.data.personal_info.name")
+        site.data.personal_info.name || "Rose City Robotics"
+      else
+        resource.data.title || site.metadata.title
+      end
+    %>" />
+    <meta name="twitter:description" content="<%= resource.data.description || site.metadata.description %>" />
+    <meta name="twitter:image" content="<%= absolute_url featured_image %>" />
+    
+    <!-- Additional SEO -->
+    <% if resource.data.keywords %>
+      <meta name="keywords" content="<%= resource.data.keywords %>" />
+    <% end %>
+    <% if resource.data.author %>
+      <meta name="author" content="<%= resource.data.author %>" />
+    <% end %>
+    <% if resource.data.canonical_url %>
+      <link rel="canonical" href="<%= absolute_url resource.data.canonical_url %>" />
     <% end %>
     <%= seo %>
   </head>
