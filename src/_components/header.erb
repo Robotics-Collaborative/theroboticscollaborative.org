@@ -6,7 +6,7 @@
           <% unless is_home_page? %>
             <div class="h-30 w-30 rounded-lg bg-white/90 p-1 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10">
               <a href="/" aria-label="Home" class="pointer-events-auto">
-                <img src="<%= relative_url '/images/square_500.jpg' %>" alt="The Robotics Collaborative Logo" class="h-28 w-28 rounded-md bg-zinc-100 object-cover dark:bg-zinc-800" />
+                <img src="<%= relative_url('/images/square_500.jpg') %>?v=<%= Time.now.to_i %>" alt="The Robotics Collaborative Logo" class="h-28 w-28 rounded-md bg-zinc-100 object-cover dark:bg-zinc-800" />
               </a>
             </div>
           <% end %>
@@ -59,10 +59,10 @@
         <div class="top-3 w-full">
           <div class="relative">
             <div class="h-30 w-30 rounded-lg bg-white/90 p-1 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10 absolute top-3 left-0 origin-left transition-opacity opacity-0">
-              <img src="<%= relative_url '/images/square_500.jpg' %>" alt="The Robotics Collaborative Logo" class="h-28 w-28 rounded-md bg-zinc-100 object-cover dark:bg-zinc-800" />
+              <img src="<%= relative_url('/images/square_500.jpg') %>?v=<%= Time.now.to_i %>" alt="The Robotics Collaborative Logo" class="h-28 w-28 rounded-md bg-zinc-100 object-cover dark:bg-zinc-800" />
             </div>
             <a href="/" aria-label="Home" class="pointer-events-auto block h-48 w-48 origin-left">
-              <img src="<%= relative_url '/images/square_500.jpg' %>" alt="The Robotics Collaborative Logo" class="h-48 w-48 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" />
+              <img src="<%= relative_url('/images/square_500.jpg') %>?v=<%= Time.now.to_i %>" alt="The Robotics Collaborative Logo" class="h-48 w-48 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" />
             </a>
           </div>
         </div>
