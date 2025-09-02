@@ -11,7 +11,7 @@ class Footer < Bridgetown::Component
     if site_instance&.data&.dig("personal_info", "name")
       site_instance.data.dig("personal_info", "name")
     else
-      "Rose City Robotics"
+      "Robotics Collaborative"
     end
   end
 
@@ -22,7 +22,6 @@ class Footer < Bridgetown::Component
       {name: "Sponsors", href: "/first_robotics#sponsors"},
       {name: "Events", href: "https://luma.com/rosecityrobotics"},
       {name: "Contact", href: "/contact"},
-      {name: "Rose City Robotics", href: "https://rosecityrobotics.com"},
       {name: "Source Code", href: "https://github.com/Robotics-Collaborative/theroboticscollaborative.org"}
     ]
   end
