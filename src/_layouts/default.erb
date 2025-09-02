@@ -17,6 +17,9 @@
     <script src="<%= asset_path :js %>" defer></script>
     <%= live_reload_dev_js %>
 
+    <!-- Stripe Buy Button Script -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<%= relative_url '/images/apple-touch-icon.png' %>">
     <link rel="icon" type="image/png" sizes="32x32" href="<%= relative_url '/images/favicon-32x32.png' %>">
