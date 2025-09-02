@@ -1,7 +1,7 @@
 <header class="pointer-events-none relative z-50 flex flex-none flex-col">
   <div class="top-0 z-10 h-16 pt-6">
     <%= render Container.new do %>
-      <div class="relative flex gap-4">
+      <div class="relative flex gap-4 items-center">
         <div class="flex flex-1">
           <% unless is_home_page? %>
             <div class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10">
@@ -24,16 +24,16 @@
 
           <!-- Desktop Navigation -->
           <nav class="pointer-events-auto hidden md:block">
-            <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+            <ul class="flex flex-wrap rounded-full bg-white/90 px-2 text-sm font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
               <% navigation_items.each do |item| %>
                 <li>
-                  <a href="<%= item[:href] %>" class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"><%= item[:name] %></a>
+                  <a href="<%= item[:href] %>" class="relative block px-2 py-2 transition hover:text-teal-500 dark:hover:text-teal-400 whitespace-nowrap"><%= item[:name] %></a>
                 </li>
               <% end %>
             </ul>
           </nav>
         </div>
-        <div class="flex justify-end md:flex-1">
+        <div class="flex justify-end md:flex-1 flex-shrink-0">
           <div class="pointer-events-auto" data-controller="theme">
             <button type="button" aria-label="Toggle theme" class="group rounded-full bg-white/90 px-3 py-2 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20" data-action="click->theme#toggle" data-theme-target="toggle">
               <!-- Sun Icon -->

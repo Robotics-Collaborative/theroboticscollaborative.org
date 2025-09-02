@@ -13,8 +13,8 @@ class Header < Bridgetown::Component
   def navigation_items
     [
       {name: "Home", href: "/"},
-      {name: "Blog", href: "/blog"},
-      {name: "Projects", href: "/projects"},
+      {name: "FIRST Robotics", href: "/first_robotics"},
+      {name: "Events", href: "https://lu.ma/wayo5yb9"},
       {name: "Contact", href: "/contact"}
     ]
   end
