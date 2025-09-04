@@ -39,6 +39,26 @@ description:
   </div>
 <% end %>
 
+<!-- Branding & Sponsors Section -->
+<div class="mt-16 sm:mt-20">
+  <%= render Container.new do %>
+    <div class="flex justify-center">
+      <div class="relative overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5 dark:bg-zinc-900 dark:ring-white/10">
+        <img
+          src="<%= relative_url('/images/rc_og_image.jpg') %>?v=<%= Time.now.to_i %>"
+          alt="Robotics Collaborative - Partnering with Oregon Robotics, FIRST Robotics Competition, Rose City Robotics, Google, Portland State University, and Metro Region Innovation Hub"
+          class="w-full max-w-4xl h-auto"
+        />
+      </div>
+    </div>
+    <div class="mt-6 text-center">
+      <p class="text-sm text-zinc-600 dark:text-zinc-400">
+        Proudly supported by our community partners and sponsors
+      </p>
+    </div>
+  <% end %>
+</div>
+
 <!-- Photos Section -->
 <div class="mt-16 sm:mt-20">
   <%= render Container.new do %>
