@@ -15,7 +15,7 @@ class Header < Bridgetown::Component
       {name: "Home", href: "/"},
       {name: "FIRST Robotics", href: "/first_robotics"},
       {name: "Sponsors", href: "/first_robotics#sponsors"},
-      {name: "Events", href: "https://luma.com/rosecityrobotics"},
+      {name: "Events", href: "https://luma.com/robotics-collaborative"},
       {name: "Contact", href: "/contact"}
     ]
   end
