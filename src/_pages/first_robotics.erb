@@ -108,8 +108,10 @@ image: FIRST_AGE-FTC-decode_logo.webp
                   <!-- Google Logo -->
                   <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="block bg-white/95 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-2xl hover:shadow-3xl transition-all duration-300 border border-white/20 w-full max-w-xs sm:w-48 h-24 sm:h-32 flex flex-col justify-center hover:scale-105">
                     <div class="text-center">
-                      <img src="<%= relative_url 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png' %>" alt="Google" class="h-8 sm:h-12 w-auto mx-auto mb-1 sm:mb-2" />
-                      <p class="text-xs text-gray-600 font-medium">Technology Partner</p>
+                      <% if false %>
+                        <img src="<%= relative_url 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png' %>" alt="Google" class="h-8 sm:h-12 w-auto mx-auto mb-1 sm:mb-2" />
+                      <% end %>
+                      <p class="text-xs text-gray-600 font-medium">Major Technology Partner</p>
                     </div>
                   </a>
 
@@ -326,7 +328,7 @@ image: FIRST_AGE-FTC-decode_logo.webp
                             <div class="text-xs text-gray-400">Supporting up to 5 team members who need assistance with costs</div>
                             <div class="text-xs mt-1" style="color: #58d083;">✅ Funded by Team Fees!</div>
                           </td>
-                          <td class="py-3 text-right font-medium" style="color: #58d083;">$2,360</td>
+                          <td class="py-3 text-right font-medium" style="color: #58d083;">$1,750</td>
                         </tr>
                         <tr class="border-b border-white/10">
                           <td class="py-3 pr-4">
@@ -345,13 +347,13 @@ image: FIRST_AGE-FTC-decode_logo.webp
                           <td class="py-4 pr-4">
                             <div class="font-medium text-lg" style="color: #58d083;">Total Donations & Funding</div>
                           </td>
-                          <td class="py-4 text-right font-medium text-lg" style="color: #58d083;">$12,429</td>
+                          <td class="py-4 text-right font-medium text-lg" style="color: #58d083;">$11,819</td>
                         </tr>
                         <tr class="border-t-2 border-white/30 pt-3">
                           <td class="py-3 pr-4">
                             <div class="font-bold text-white text-base">Remaining Team Needs</div>
                           </td>
-                          <td class="py-3 text-right text-white font-bold text-base">$4,035</td>
+                          <td class="py-3 text-right text-white font-bold text-base">$3,485</td>
                         </tr>
                       </tbody>
                     </table>
