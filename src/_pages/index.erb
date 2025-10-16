@@ -39,6 +39,36 @@ description:
   </div>
 <% end %>
 
+<!-- Coaching Callout -->
+<div class="mt-16 sm:mt-20">
+  <%= render Container.new do %>
+    <a href="/contact" class="block">
+      <div class="p-6 bg-gradient-to-r from-teal-50 to-blue-50 dark:from-teal-900/20 dark:to-blue-900/20 rounded-lg border border-teal-200 dark:border-teal-700 hover:shadow-lg transition-shadow cursor-pointer">
+        <div class="flex items-start">
+          <div class="flex-shrink-0">
+            <svg class="h-6 w-6 text-teal-600 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </div>
+          <div class="ml-3 flex-1">
+            <h3 class="text-lg font-medium text-teal-900 dark:text-teal-100">
+              FTC Team #30603 is Seeking a Second Head Coach & Mentors!
+            </h3>
+            <p class="mt-2 text-sm text-teal-800 dark:text-teal-200">
+              Anyone can apply; no robotics experience is necessary. Our team needs diverse skills from both coaches and mentors. Click to learn more and apply!
+            </p>
+          </div>
+          <div class="ml-4 flex-shrink-0">
+            <svg class="h-5 w-5 text-teal-600 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  <% end %>
+</div>
+
 <!-- Branding & Sponsors Section -->
 <div class="mt-16 sm:mt-20">
   <%= render Container.new do %>
@@ -81,6 +111,7 @@ description:
     </div>
   <% end %>
 </div>
+
 
 <!-- Main Content -->
 <%= render Container.new(outer_class: "mt-24 md:mt-28") do %>
