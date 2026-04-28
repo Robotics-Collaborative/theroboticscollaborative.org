@@ -1,17 +1,17 @@
 <footer class="mt-32 flex-none">
   <%= render Container.new do %>
-    <div class="border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40">
+    <div class="border-t border-zinc-100 pb-16 pt-10">
       <div class="flex flex-col items-center gap-8">
-        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-zinc-800">
           <% navigation_items.each do |item| %>
             <% if item[:href].start_with?('http') %>
-              <a href="<%= item[:href] %>" target="_blank" rel="noopener noreferrer" class="transition hover:text-teal-500 dark:hover:text-teal-400"><%= item[:name] %></a>
+              <a href="<%= item[:href] %>" target="_blank" rel="noopener noreferrer" class="transition hover:text-teal-500"><%= item[:name] %></a>
             <% else %>
-              <a href="<%= item[:href] %>" class="transition hover:text-teal-500 dark:hover:text-teal-400"><%= item[:name] %></a>
+              <a href="<%= item[:href] %>" class="transition hover:text-teal-500"><%= item[:name] %></a>
             <% end %>
           <% end %>
         </div>
-        <div class="text-center text-sm text-zinc-400 dark:text-zinc-500 space-y-2">
+        <div class="text-center text-sm text-zinc-400 space-y-2">
           <p>&copy; <%= Date.today.year %> <%= student_name %>. All rights reserved.</p>
           <p>The Robotics Collaborative is a registered IRS 501(c)(3) nonprofit EIN 24‑6051098, donations are tax deductible.</p>
         </div>
